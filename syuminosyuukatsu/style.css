@@ -10,12 +10,13 @@ vertical-align:bottom;
 
 body{
 background-color:#E8E3DA;
-color:#1A202C;  
+color:#1A202C;
 }
 
 
 #wrapper{
  max-width:1400px; 
+margin:0 auto ; 
 }
 
 p{
@@ -109,7 +110,7 @@ font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN",
 
 
 /*--グローバルメニュー部分--------*/
-nav ul{
+nav .navigation{
 width:auto;
 float:left;
 /*margin-left:350px;*/
@@ -117,40 +118,55 @@ margin-top:10px;
 margin-bottom:10px;
 }
 
-nav li{
+.navigation li{
 list-style:none;
 display:inline-block;
 }
 
-nav li a{
+.navigation li a{
 display:block;
-color:#333;
 font-size:18px;
 padding:10px 15px;
 margin:10px;
+color:#1A202C;
 }
+
+.navigation .navigation_list a:link{
+color:#1A202C;
+text-decoration:none;
+}
+
+.navigation .navigation_list a:hover{
+text-decoration:underline;
+color:#B8921E;
+}
+
+
 
 .clr{
 clear:both;
 }
 
-.login{
+.navigation .login{
 background-color:#1A202C;
 border-radius:10px;
 border:2px solid #1A202C;
 }
-.login a{
+.navigation .login a{
 color:#fff;
 margin:8px 0;
+text-decoration:none;
 }
-.new{
+.navigation .new{
 background-color:#B8921E;
 border:2px solid #B8921E;
 border-radius:10px;
 margin-left:10px;
 }
-.new a{
+.navigation .new a{
 color:#fff;
+text-decoration:none;
+
 }
 
 
@@ -173,11 +189,25 @@ margin-top:70px;
 font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
 font-size:60px;
 font-weight:700;
-margin:30px 0 30px 0;
+margin:30px 0 50px 0;
 display: inline-block;
 /*border-bottom:solid 5px #006400 ;*/
-
 }
+
+h1 .h1_subtitle::before{
+content:"★";
+color:#B8921E;
+}
+.setsumei h1 .h1_subtitle{
+font-size:40%;
+display:block;
+line-height:1.2;
+}
+.setsumei h1 .h1_subtitle::after{
+content:"★";
+color:#B8921E;
+}
+
 .setsumei p{
 line-height:1.9;
 font-size:18px;
@@ -209,7 +239,7 @@ section.art01 {
   top: 150px; /* ★上からどれくらい下げるか（手動で調整） */
   left: 0;
   right: 0;
-  width: 80%; /* 箱の幅を決める */
+  width: 90%; /* 箱の幅を決める */
   margin: 0 auto; /* ★箱自体を左右の中央に置く（定番のやつ！） */
   
   text-align: center; /* 文字を真ん中揃え */
@@ -239,9 +269,10 @@ margin-top:100px;
 text-align: center;
 }
 .h2_icon img{
-width:60px;
+width:100px;
 }
 .h2_step{
+font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
 text-align:center;
 font-size:300%;
 }
@@ -258,7 +289,11 @@ border:1px solid #333;
 border-radius:5px;
 padding:20px;
 }
+.step{
+font-size:100%;
+text-align:center;
 
+}
 .count{
 font-size:300%;
 text-align:center;
@@ -288,7 +323,8 @@ background-color:#2C585B;
 
 }
 .art03_box{
-margin-top:100px;
+margin-top:70px;
+margin-bottom:100px;
 }
 
 .art03_gazo{
@@ -296,14 +332,60 @@ flex:1;
 }
 .art03_text{
 flex:1;
-margin:150px 50px 0 0;
+margin:100px 50px 0 0;
 color:#fff;
+}
+
+.art03_text_title{
+font-size:30px;
+font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
+margin-bottom:50px;
+}
+
+.cta-link{
+color:#B8921E;
+}
+
+.art03_box_under_read{
+font-size:150%;
+text-align:center;
+margin-bottom:50px;
+}
+.use-voice::before{
+content:"★";
+color:#B8921E;
+}
+
+.use-voice::after{
+content:"★";
+color:#B8921E;
+
 }
 
 
 
+.art03_box_under{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+margin:0 50px;
+margin-bottom:200px;
+}
 
 
+.art03_box_under_box{
+display:flex;
+}
+.art03_gazo_under img{
+width:300px;
+}
+
+
+.collector{
+font-size:120%;
+font-weight:bold;
+}
 
 
 
@@ -312,7 +394,7 @@ color:#fff;
 section.cta{
 text-align:center;
 margin-top:100px;
-margin-bottom:100px;
+margin-bottom:200px;
 }
 .cta_text{
 margin-bottom:50px;
@@ -367,14 +449,32 @@ margin-bottom:100px;
 }
 .link_more{
 text-align:center;
+margin-top:30px;
+}
+
+.link_more a:link, .link_more a:visited {
+text-decoration: none;
+color: #333;
+}
+.link_more a:hover{
+color:#8b0000;
 }
 .option_more{
 text-align:center;
 }
 
+.option_box_title02{
+font-weight:bold;
+font-size:120%;
+text-align:center;
+color:#B8921E;
+}
 
-
-
+.option_box_title03{
+font-weight:bold;
+font-size:160%;
+text-align:center;
+}
 
 
 
@@ -392,22 +492,26 @@ justify-content: space-between; /* 2つの要素を両端（左右）に配置 *
   align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
 }
 
-footer ul{
+.foot_box ul{
 margin-left: auto;
-padding:50px;
-line-height:1.8;
+padding:50px 80px;
+line-height:2.0;
 }
 
-footer ul li{
+.foot_box ul li{
 list-style:none;
 }
-
-footer ul li a:link,a:visited{
+.foot_box ul li a{
+color:#fff;
+}
+.foot_box ul li a:link,.foot_box ul lia:visited{
 text-decoration:none;
 color:#fff;
 }
 
-
+.footer_logo{
+margin-left:50px;
+}
 
 
 
@@ -423,15 +527,55 @@ color:#fff;
   grid-template-columns: 1fr 1fr 1fr; 					/* 2. マス目同士の隙間を設定 */
   gap:100px 20px; 
 justify-items: center;
+
+}
+
+.grid_content{
+border-radius:5px;
+}
+
+
+
+.grid_content a:link{
+text-decoration:none;
+}
+.grid_content a:hover{
+background-color:#667ba4;
 }
 
 .grid_content{
 width:400px;
-height:480px;
+height:500px;
 /*border:1px solid #333;*/
 background-color:#1E232A;
 
 }
+
+/* カードの位置基準を設定 */
+.grid_content {
+  position: relative; /* 透明なリンク枠の基準にする */
+}
+
+/* リンクをカード全体に広げる */
+.grid_content .more a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* カード全体を覆う */
+}
+
+
+
+.id-number{
+margin-left:20px;
+color:#ffffff;
+font-size:80%;
+}
+
+
 
 .gazo_title{
 white-space: nowrap;
@@ -458,31 +602,29 @@ margin-left:20px;
 }
 .more{
 text-align: center; 
-margin-right: 20px;
+margin-left: 120px;
 margin-top: 50px;
 width:60%;
 }
 .more a{
+color:#ffffff;
 display:block;
-background-color:#fff;
-border-radius:5px;
-/*box-shadow:5px 5px 5px #c0c0c0; */
 font-size:80%;
 }
 
-.more a:link,a:visited{
+/*.more a:link,a:visited{
 text-decoration:none;
 color:#666;
 }
 .more a:hover{
 background-color:#667ba4;
 
-}
+} */
 
 .motto{
 text-align:center;
 margin-top:100px;
-margin-bottom:200px;
+margin-bottom:100px;
 /*border:1px solid #333;*/
 }
 .motto p{
@@ -505,6 +647,102 @@ text-align:left;
 text-align:center;
 margin:50px 0;
 }
+
+
+.arrow02{
+  font-style: normal;
+  margin-top: 6px;
+  font-size: 40px;
+  transition: transform 0.3s ease;
+}
+
+
+
+/*もっと見る-----*/
+.motto {
+  text-align: center;
+  margin: 100px 0 200px;
+}
+
+.btn-more {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+font-weight:bold;
+  letter-spacing: 0.15em;
+  transition: color 0.3s ease;
+}
+
+.btn-more .arrow {
+  font-style: normal;
+  margin-top: 6px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-more:hover {
+  color: #8b0000; /* さりげないアクセントカラー（エンジ色など） */
+}
+
+.btn-more:hover .arrow {
+  transform: translateY(5px);
+}
+
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.pagination a, .pagination span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+margin-bottom:100px;
+margin-top:100px;
+}
+
+/* ホバー時の効果 */
+.pagination a:hover {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* 現在地（アクティブ）の表示 */
+.pagination .active {
+  background-color: #b8975a; /* サイトに合わせたメインカラー（真鍮色など） */
+  color: #fff;
+  border-color: #b8975a;
+  font-weight: bold;
+}
+
+/* 「前へ」「次へ」ボタンの幅調整 */
+.pagination .prev, .pagination .next {
+  width: auto;
+  padding: 0 16px;
+}
+
+
+
+
+
+
+
 
 
 /*-------------------------------------------------
@@ -605,7 +843,7 @@ border-color:#dcdcdc;
 color: #1e232a;;
 position:absolute;
 bottom:60px;
-left:480px;
+right:20px;
 font-weight:bold;
 
 }
@@ -695,7 +933,7 @@ margin-bottom:80px;
 margin:0 50px 50px 50px;
 display:flex;
 gap:45px;
-padding:30px;
+padding:30px 30px 100px 30px;
 position: relative;
 background-color:#FBF9F5;
 border-radius:6px;
@@ -829,7 +1067,22 @@ position:relative;
 }
 .edit02{
   text-align:right;
+
 }
+
+.edit02 a{
+text-decoration:none;
+color:#1E232A;
+
+}
+
+.edit02 a:blank{
+
+}
+.edit02 a:hover{
+color:#B8921E;
+}
+
 .others_text_edit{
   color:#ffffff;
   position:absolute;
@@ -850,6 +1103,7 @@ font-size:70%;
 
 .option_box{
 position:relative;
+padding-bottom: 60px;
 }
 .option_box_title{
 font-size:130%;
@@ -894,7 +1148,7 @@ color: #1A202C;
 }
 
 .option_box_bottun{
-padding:5px;
+padding:5px 30px;
 background-color:#2C585B;
 border-radius:6px;
 font-size:90%;
@@ -904,8 +1158,10 @@ position:absolute;
 left:50%;
 transform:translateX(-50%);
 bottom:20px;
-
+white-space:nowrap;
 }
 
-
-
+.option_more{
+color:#808080;
+font-size:90%;
+}
