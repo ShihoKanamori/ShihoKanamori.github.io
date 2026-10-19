@@ -1,10 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="ja" dir="ltr">
-<html>
 <head>
-<title>趣味の終活 ｜ マイコレクション</title>
-<link name="description" content="趣味の終活サイトのマイコレクションのページです。あなたの大切なコレクションを一覧で管理できます。">
-<link rel="stylesheet" type="text/css" href="../style.css"></head>
+<meta charset="UTF-8">
+<title>マイコレクション｜【趣味の終活】  </title>
+<meta name="description" content="趣味の終活サイトのマイコレクションのページです。あなたの大切なコレクションを一覧で管理できます。">
+<meta name="viewport" content="width=1400">
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<!-- ★ここから追加（Google Fonts：Shippori Mincho） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<!-- ★ここまで -->
+
+
+<!-- ★AOS CSS（アニメーション用） -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
 
 
 <body>
@@ -30,8 +44,8 @@
 </div>
 
 
-<div class="setsumei">
-<p class="haguruma"><img src="../img/haguruma.png" alt=""></p>
+<div class="setsumei" data-aos="fade-up">
+<p class="haguruma"><img src="../img/haguruma.png" alt="歯車の画像"></p>
 <h1>マイコレクション</h1>
 <p>あなたが時間をかけて集めた宝物の一覧で確認いただけます。<br>
 今、ご覧になりたいコレクションはどちらですか？</p>
@@ -57,7 +71,7 @@
 
 <div class="grid-container">
 
-<div class="grid_content camera">
+<div class="grid_content camera" data-aos="fade-up" data-aos-delay="0">
 <p class="id-number">001</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo01.png" width="240" height="320" ></p>
@@ -70,7 +84,7 @@
 
 </div>
 
-<div class="grid_content pen">
+<div class="grid_content pen" data-aos="fade-up" data-aos-delay="100">
 <p class="id-number">002</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo04.png" width="240" height="320" ></p>
@@ -83,7 +97,7 @@
 </div>
 
 
-<div class="grid_content record_beatles">
+<div class="grid_content record_beatles" data-aos="fade-up" data-aos-delay="200">
 <p class="id-number">003</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo09.png" width="240" height="320" ></p>
@@ -96,7 +110,7 @@
 </div>
 
 
-<div class="grid_content camera">
+<div class="grid_content camera" data-aos="fade-up" data-aos-delay="250">
 <p class="id-number">004</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo02.png" width="240" height="320"></p>
@@ -109,7 +123,7 @@
 </div>
 
 
-<div class="grid_content pen">
+<div class="grid_content pen" data-aos="fade-up" data-aos-delay="350">
 <p class="id-number">005</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo05.png" width="240" height="320"></p>
@@ -121,7 +135,7 @@
 </div>
 </div>
 
-<div class="grid_content record_beatles">
+<div class="grid_content record_beatles" data-aos="fade-up" data-aos-delay="450">
 <p class="id-number">006</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/1_top.png" width="240" height="320"></p>
@@ -129,13 +143,13 @@
 </div>
 <div class="text_space">
 		<p class="gazo_title">06.The BEATLES『A Hard Day's Night』1964年</p>
-		<p class="more"><a href="001/index.html">このコレクションページへ &emsp;&raquo;</a></p>
+		<p class="more"><a href="006/index.html">このコレクションページへ &emsp;&raquo;</a></p>
 </div>
 </div>
 
 
 
-<div class="grid_content camera">
+<div class="grid_content camera" data-aos="fade-up" data-aos-delay="500">
 <p class="id-number">007</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo03.png" width="240" height="320"></p>
@@ -149,7 +163,7 @@
 
 
 
-<div class="grid_content pen">
+<div class="grid_content pen" data-aos="fade-up" data-aos-delay="600">
 <p class="id-number">008</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo06.png" width="240" height="320"></p>
@@ -163,7 +177,7 @@
 
 
 
-<div class="grid_content record_beatles">
+<div class="grid_content record_beatles" data-aos="fade-up" data-aos-delay="700">
 <p class="id-number">009</p>
 <div class="gazo_space">
 		<p class="photo_big"><img src="../img/photo07.png" width="240" height="320"></p>
@@ -215,7 +229,7 @@
 
 <footer>
 <div class="foot_box">
-<div class="footer_logo"><a href="../index.html"><img src="../img/footer_logo3.png" alt="logo"></a></div>
+<div class="footer_logo"><a href="../index.html"><img src="../img/footer_logo3.png" alt="ロゴ"></a></div>
 <ul>
 <li><a href="../index.html">ホーム</a></li>
 <li><a href="#">趣味の終活について</a></li>
@@ -227,7 +241,22 @@
 <li><a href="#">お問い合わせ</a></li>
 </ul>
 </div>
+<p class="copy">&copy; 2026 Shiho Knamori All Rights Reserved.</p>
 </footer>
 </div><!--#wrapper-->
+
+<!-- ★AOS JS（アニメーション用） -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+duration: 600,   // 0.6秒かけて表示
+easing: 'ease-out', // アーバンホーム風のすっきりした動き
+once: true       // スクロールで1回だけ表示
+});
+</script>
+
+
+
+
 </body>
 </html>

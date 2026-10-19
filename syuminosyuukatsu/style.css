@@ -11,11 +11,12 @@ vertical-align:bottom;
 body{
 background-color:#E8E3DA;
 color:#1A202C;
+min-width: 1400px;
 }
 
 
 #wrapper{
- max-width:1400px; 
+max-width:1400px; 
 margin:0 auto ; 
 }
 
@@ -49,58 +50,56 @@ float:left;
 /*--ヒーロー画像部分--------*/
 
 /* 親要素：基準位置に設定 */
-.hero-container {
+.hero-container{
 clear:both;
-  position: relative;
-  width: 100%;
-  max-width: 1440px; /* 必要に応じて調整 */
-  margin: 0 auto;
-  font-size: 1rem;
-  
-  opacity: 0.9;
+position:relative;
+width:100%;
+max-width:1440px;
+margin:0 auto;
+font-size:1rem;
+opacity:0.9;
 }
 
 /* 画像：レスポンシブ対応 */
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-/*margin-top:50px;*/
+.hero-image{
+width:100%;
+height:auto;
+display:block;
 }
 
 /* 子要素（テキストエリア）：絶対配置で上に重ねる */
 .hero-text {
-  position: absolute;
-  top: 50%;                 /* 上から50%の位置 */
-  left: 5%;                 /* 左から5%の位置（左側に寄せる） */
-  transform: translateY(-50%); /* 垂直方向の中央揃え */
-  color: #ffffff;           /* テキスト色（白） */
-  max-width: 45%;           /* 画像の左側に収まるよう幅を制限 */
-  z-index: 10;              /* 画像より前に表示 */
+position: absolute;
+top:50%;/* 上から50%の位置 */
+left:5%;/* 左から5%の位置（左側に寄せる） */
+transform:translateY(-50%);/* 垂直方向の中央揃え */
+color:#ffffff;/* テキスト色（白） */
+max-width:45%;/* 画像の左側に収まるよう幅を制限 */
+z-index:10;/* 画像より前に表示 */
 }
 
 /* テキストのスタイリング例 */
 .hero-text h2 {
-font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
+font-family:"Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
+font-size:3rem;
+margin-bottom:1rem;
+line-height:1.4;
 }
 
-.hero-text p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
-  color:#fff;
+.hero-text p{
+font-size:1rem;
+margin-bottom:1.5rem;
+opacity:0.9;
+color:#fff;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #B8921E; /* 高級感のあるシックなブラウン/ゴールド */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
+.btn{
+display:inline-block;
+padding:12px 24px;
+background-color:#B8921E;
+color:#fff;
+text-decoration:none;
+border-radius:4px;
 }
 
 
@@ -113,7 +112,6 @@ font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN",
 nav .navigation{
 width:auto;
 float:left;
-/*margin-left:350px;*/
 margin-top:10px;
 margin-bottom:10px;
 }
@@ -191,7 +189,6 @@ font-size:60px;
 font-weight:700;
 margin:30px 0 50px 0;
 display: inline-block;
-/*border-bottom:solid 5px #006400 ;*/
 }
 
 h1 .h1_subtitle::before{
@@ -220,32 +217,30 @@ font-size:18px;
 
 /*--セクション01画像部分--------*/
 
-section.art01 {
-  position: relative; /* 子要素の位置の基準にする */
-  width: 100%;
-  max-width: 1440px;
-  height: 500px; /* 高さをしっかり決める */
-  margin: 0 auto;
-  
-  /* 背景画像 */
-  background-image: url("img/arrt_01.png");
-  background-size: cover;
-  background-position: center;
+section.art01{
+position:relative;
+width:100%;
+max-width:1440px;
+height:500px;
+margin:0 auto;
+
+background-image:url("img/arrt_01.png");
+background-size:cover;
+background-position:center;
 }
 
 /* 子要素：文字が入った箱 */
-.box_right {
-  position: absolute;
-  top: 150px; /* ★上からどれくらい下げるか（手動で調整） */
-  left: 0;
-  right: 0;
-  width: 90%; /* 箱の幅を決める */
-  margin: 0 auto; /* ★箱自体を左右の中央に置く（定番のやつ！） */
-  
-  text-align: center; /* 文字を真ん中揃え */
+.box_right{
+position:absolute;
+top:150px;
+left:0;
+right:0;
+width:90%;
+margin:0 auto;
+text-align:center;
 }
 
-/* 文字の装飾 */
+
 .box_right h2 {
 color: #ffffff;
 font-size: 32px;
@@ -272,7 +267,7 @@ text-align: center;
 width:100px;
 }
 .h2_step{
-font-family: "Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
+font-family:"Shippori Mincho", "游明朝", "YuMincho", "Hiragino Mincho ProN", serif;
 text-align:center;
 font-size:300%;
 }
@@ -315,13 +310,12 @@ margin-bottom:30px;
 display:flex;
 gap:20px;
 background-color:#2C585B;
-
 }
 
 .art03_read{
-  text-align:center;
-
+text-align:center;
 }
+
 .art03_box{
 margin-top:70px;
 margin-bottom:100px;
@@ -365,11 +359,12 @@ color:#B8921E;
 
 
 .art03_box_under{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+justify-items:center;
+max-width:1000px;
 gap:30px;
-margin:0 50px;
+margin:0 auto;
 margin-bottom:200px;
 }
 
@@ -452,7 +447,7 @@ text-align:center;
 margin-top:30px;
 }
 
-.link_more a:link, .link_more a:visited {
+.link_more a:link, .link_more a:visited{
 text-decoration: none;
 color: #333;
 }
@@ -486,10 +481,11 @@ color:#fff;
 height:auto;
 overflow:hidden;
 }
+
 .foot_box{
-display: flex;
-justify-content: space-between; /* 2つの要素を両端（左右）に配置 */
-  align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
+display:flex;
+justify-content:space-between; /* 2つの要素を両端（左右）に配置 */
+align-items:center; /* 垂直方向の中央揃え（必要に応じて） */
 }
 
 .foot_box ul{
@@ -514,6 +510,15 @@ margin-left:50px;
 }
 
 
+.copy{
+font-size:70%;
+color:#fff;
+text-align:center;
+padding-bottom:30px;
+}
+
+
+
 
 /*-------------------------------------------------
 ★コレクションページ一覧 collection/index.html★
@@ -523,11 +528,10 @@ margin-left:50px;
 
 
 .grid-container {
-  display: grid;     /* 1. 列（横方向）の数を指定（1fr = 均等分割の単位） */
-  grid-template-columns: 1fr 1fr 1fr; 					/* 2. マス目同士の隙間を設定 */
-  gap:100px 20px; 
-justify-items: center;
-
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:100px 0; 
+justify-items:center;
 }
 
 .grid_content{
@@ -546,25 +550,24 @@ background-color:#667ba4;
 .grid_content{
 width:400px;
 height:500px;
-/*border:1px solid #333;*/
 background-color:#1E232A;
 
 }
 
 /* カードの位置基準を設定 */
-.grid_content {
-  position: relative; /* 透明なリンク枠の基準にする */
+.grid_content{
+position:relative; /* 透明なリンク枠の基準にする */
 }
 
 /* リンクをカード全体に広げる */
 .grid_content .more a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* カード全体を覆う */
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:1; /* カード全体を覆う */
 }
 
 
